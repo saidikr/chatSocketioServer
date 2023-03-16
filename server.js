@@ -19,6 +19,6 @@ app.use(
 app.use("/", apiRoutes());
 
 
-app.listen(PORT)
+app.listen(3555)
 
-console.log(`app started at port : ${PORT}`)
+console.log(`app started at port : ${3555}`)

@@ -5,6 +5,8 @@ const { MONGO_PROD_URL } = process.env;
 
 
 exports.connect = () => {
+  
+  mongoose.set("strictQuery", false);
   mongoose
     .connect(MONGO_PROD_URL, {
       useNewUrlParser: true,
